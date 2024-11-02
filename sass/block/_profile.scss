@@ -13,3 +13,15 @@
         }
     }
 }
+
+.profile .container  {
+    border: 5px solid $color-secondary;
+    padding: 1rem;
+    box-shadow: 0.5em 0.5em white;
+    margin: 2rem 0 3rem 0;
+        h4 {
+            color: $color-primary;
+            font-family: $primary-font;
+            margin-bottom: 1rem;
+        }
+}

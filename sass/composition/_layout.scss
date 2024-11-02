@@ -2,21 +2,40 @@ body {
     background-color: $color-background;
     color: white;
 }
-.container{
+.container, nav, .profile {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
 main, aside, footer {
     div {
-        margin: 1rem;
+        /*margin: 1rem;*/
 
         * {
-            grid-column: 1/-1;
+            grid-column: 2/-2;
         }
 
         article {
-            margin: 1rem 0;
+            /*margin: 1rem 0;*/
         }
     }
 }
+
+nav ul {
+    grid-column: 2/12;
+    display: flex;
+}
+
+#about, #guidelines, #contribute, #profile-title, .profile .container ul, .profile .container a {
+    grid-column: 1/13;
+}
+
+#main {
+    margin-top: 3rem;
+}
+
+.profile .container {
+    grid-column: 2/-2;
+}
+
+

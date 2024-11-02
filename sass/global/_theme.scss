@@ -21,7 +21,7 @@ $color-gray: mix(#767676, $color-body, 70%) !default;
 $colors: map-merge(
   $brand-colors,
   (
-    background: $color-background,
+    background-color: $color-background,
     text: $color-body,
     light: #fff,
   )

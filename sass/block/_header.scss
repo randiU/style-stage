@@ -1,5 +1,6 @@
 header {
     padding: 1rem;
+    margin-bottom: 6%;
     div{
         text-align: center;
         h1 {
@@ -14,9 +15,13 @@ header {
         }
         a {
             grid-column: 4/-4;
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: $desktop-size) {
                 grid-column: 5/-5;
             }
         }
+    }
+
+    @media screen and (min-width: $desktop-size) {
+        margin-bottom: 3%;
     }
 }

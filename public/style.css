@@ -230,6 +230,7 @@ nav ul {
 
 header {
   padding: 1rem;
+  margin-bottom: 6%;
 }
 header div {
   text-align: center;
@@ -247,25 +248,31 @@ header div p {
 header div a {
   grid-column: 4/-4;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   header div a {
     grid-column: 5/-5;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+    margin-bottom: 3%;
   }
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 nav ul li {
   list-style: none;
-  width: 33%;
   text-align: center;
   font-family: "Bungee", sans-serif;
+  margin-bottom: 10%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   nav ul li {
-    width: 16%;
+    margin-bottom: 3%;
   }
 }
 nav ul li a {

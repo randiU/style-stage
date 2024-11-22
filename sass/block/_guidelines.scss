@@ -3,5 +3,17 @@
         a {
             grid-column: 3/-3;
         }
+
+        .link-guidelines {
+            margin-top: 2em;
+            margin-bottom: 4em;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: $button-font-size-mobile;
+            @media screen and (min-width: $desktop-size) {
+                grid-column: 5/9;
+                font-size: $button-font-size-desktop;
+            }
+        }
     }
 }
